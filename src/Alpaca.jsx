@@ -12,7 +12,7 @@ const Alpaca = ({ design }) => {
               src={`${imagePath}/${key}/${design[key][0]}.png`}
               alt={key}
               key={key}
-              className={`absolute w-[500px] h-[500px] md:w-[300px] md:h-[300px] block z-[${design[key][1]}] rounded-xl`}
+              className="absolute w-[500px] h-[500px] md:w-[300px] md:h-[300px] block rounded-xl"
             />
           );
         })}

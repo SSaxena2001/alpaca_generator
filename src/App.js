@@ -48,15 +48,15 @@ function App() {
     Accessories: ["Earings", "Flower", "Glasses", "Headphone"],
   };
   const designDefault = {
-    background: ["blue70", 1],
-    neck: ["default", 2],
-    nose: ["nose", 3],
-    mouth: ["default", 4],
-    ears: ["default", 7],
-    hair: ["default", 9],
-    eyes: ["default", 10],
-    leg: ["default", 50],
-    accessories: ["headphone", 20],
+    background: ["blue70"],
+    neck: ["default"],
+    nose: ["nose"],
+    mouth: ["default"],
+    ears: ["default"],
+    hair: ["default"],
+    eyes: ["default"],
+    leg: ["default"],
+    accessories: ["headphone"],
   };
   const headers = Object.keys(options);
   const [selectedHeader, setSelectedHeader] = useState("Hair");
@@ -71,7 +71,6 @@ function App() {
       let randomLength = Math.floor(Math.random() * options[key].length);
       randomDesign[key.toLowerCase()] = [
         options[key][randomLength].toLowerCase(),
-        design[key.toLowerCase()][1],
       ];
     }
     setDesign(randomDesign);
@@ -145,7 +144,7 @@ function App() {
                     const newTitle = title.toLowerCase();
                     const newHeader = selectedHeader.toLowerCase();
                     const newDesign = design;
-                    newDesign[newHeader] = [newTitle, newDesign[newHeader][1]];
+                    newDesign[newHeader] = [newTitle];
                     setDesign(newDesign);
                     forceUpdate();
                   }}
