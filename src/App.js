@@ -18,7 +18,7 @@ function App() {
       "Blue70",
       "DarkBlue30",
       "DarkBlue50",
-      "DarkBlu70",
+      "DarkBlue70",
       "Green50",
       "Green60",
       "Green70",
