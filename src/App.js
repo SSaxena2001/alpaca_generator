@@ -6,6 +6,7 @@ import domtoimage from "dom-to-image-more";
 function useForceUpdate() {
   const [value, setValue] = useState(0); // integer state
   return () => setValue((value) => value + 1); // update the state to force render
+  console.log(value);
 }
 
 function App() {
